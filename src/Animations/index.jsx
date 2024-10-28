@@ -9,7 +9,7 @@ const NumberAnimation = ({ value }) => {
     const tl = gsap.timeline();
 
     tl.to({ value: displayedValue }, {
-      duration: 2, 
+      duration: 3, 
       value: value,
       onUpdate: function() {
         setDisplayedValue(Math.floor(this.targets()[0].value));
